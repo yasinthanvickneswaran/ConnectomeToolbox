@@ -5,12 +5,11 @@
 https://doi.org/10.1371/journal.pcbi.1005283* 
 
 **Abstract:**
-- Extrasynaptic modulation (monoamines and peptides) influence neural circuits
 - This paper presents a draft monoamine connectome and a partial neuropeptide connectome, based on new and published expression data for biosynthetic genes and receptors
 
 **Introduction**
 - A full understanding of neural connectivity requires a detailed mapping of these extrasynaptic pathways
-- Monoaminergic systems play diverse roles in regulating behaviour and so extrasynaptic monoamine interactions must also be mapped, not just the network of wired chemical synapses and gap junctions
+- Monoaminergic systems play diverse roles in regulating behaviour and so extrasynaptic monoamine interactions must also be mapped, not just the network of wired chemical synapses and gap junctions.
 - Neuropeptides are widely used as neuromodulators in the C.elegans nervous system, with over 250 known or predicted neuropeptides from at least 122 precursor genes and over 100 putative peptide receptors
 
 **Materials & Methods**
