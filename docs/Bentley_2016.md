@@ -14,12 +14,10 @@ https://doi.org/10.1371/journal.pcbi.1005283*
 
 **Materials & Methods**
 - Full hermaphrodite C.elegans connectome, containing all 302 neurons
-- Network was composed from somatic connectome of White et al, updates and released by Chklovskii lab
-  - https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1001066
-  - https://www.pnas.org/doi/full/10.1073/pnas.0506806103
+- Network was composed from somatic connectome of White et al., 1986 and Varshney et al., 2011. 
 - Pharyngeal network of Albertson and Thomson made available by the Cybernetic C.elegans Program
   - (CCeP:http://ims.dse.ibaraki.ac.jp/ccep/)
-- Functional classifications referred (i.e. sensory neuron, interneuron, motor neuron) are based on the classification scheme used in WormAtlas
+- Functional classifications referred (i.e. sensory neuron, interneuron, motor neuron) are based on the classification scheme used in WormAtlas.
 
 **Monoamine network construction**
 - A literature search was performed to identify genes known to be receptors, transporters or synthetic enzymes of monoamines
