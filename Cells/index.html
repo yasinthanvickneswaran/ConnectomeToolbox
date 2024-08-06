@@ -1,0 +1,4915 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Test_data/">
+      
+      
+        <link rel="next" href="../Python/">
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>C. elegans cells - C. elegans Connectome Toolbox</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hermaphrodite" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="C. elegans Connectome Toolbox" class="md-header__button md-logo" aria-label="C. elegans Connectome Toolbox" data-md-component="logo">
+      
+  <img src="../images/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            C. elegans Connectome Toolbox
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              C. elegans cells
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="C. elegans Connectome Toolbox" class="md-nav__button md-logo" aria-label="C. elegans Connectome Toolbox" data-md-component="logo">
+      
+  <img src="../images/favicon.ico" alt="logo">
+
+    </a>
+    C. elegans Connectome Toolbox
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Comparison/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comparison
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Connectomes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Connectomes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Albertson_1976/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Albertson & Thomson 1976
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../White_1986/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    White et al. 1986
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Durbin_1987/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Durbin 1987
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hall_1991/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hall & Russell 1991
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Altun_2009/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Altun et al. 2009
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Varshney_2011/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Varshney et al. 2011
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Serrano_2013/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Serrano-Saiz et al. 2013
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Pereira_2015/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pereira et al. 2015
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gendrel_2016/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gendrel, Hobert & Atlas 2016
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Bentley_2016/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bentley et al. 2016
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cook_2019/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cook et al. 2019
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cook_2020/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cook et al. 2020
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fenyves_2020/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fenyves et al. 2020
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Brittin_2021/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Brittin et al. 2021
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Taylor_2021/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Taylor et al. 2021
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Yemini_2021/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yemini et al. 2021
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Witvliet_2021/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Witvliet et al. 2021
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Beets_2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Beets et al. 2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ripoll_2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ripoll-Sanchez et al. 2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dag_2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dag et al. 2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Atanas_2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atanas et al. 2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Randi_2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Randi et al. 2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data sets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Data sets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../White_A_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    White et al. 1986 - A (N2U)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../White_L4_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    White et al. 1986 - L4 (JSH)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../White_whole_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    White et al. 1986 - whole
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Varshney_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Varshney et al. 2011
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cook2019Herm_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cook et al. 2019
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cook2020_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cook et al. 2020
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Witvliet1_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Witvliet et al. 2021 - 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Witvliet2_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Witvliet et al. 2021 - 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WormNeuroAtlas_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WormNeuroAtlas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Test_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Cells
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Cells
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    C. elegans cells
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    C. elegans cells
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hermaphrodite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hermaphrodite
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hermaphrodite">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Muscle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Muscle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intestinal-muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intestinal muscle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vulval-muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vulval muscle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body-wall-muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Body wall muscle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uterine-muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uterine muscle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sphincter-and-anal-depressor-muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sphincter and anal depressor muscle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#odd-numbered-pharyngeal-muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Odd numbered pharyngeal muscle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#even-numbered-pharyngeal-muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Even numbered pharyngeal muscle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alimentary-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alimentary System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alimentary System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#marginal-cells-mc-of-the-pharynx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marginal cells (mc) of the pharynx
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intestinal-cells" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intestinal cells
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reproductive-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reproductive System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reproductive System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vulval-epithelium" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vulval epithelium
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#germline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Germline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dtc-and-somatic-gonad" class="md-nav__link">
+    <span class="md-ellipsis">
+      DTC and somatic gonad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#embryo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embryo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uterus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uterus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spermatheca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spermatheca
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spermatheca-uterine-valve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spermatheca-uterine valve
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nervous-tissue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nervous Tissue
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nervous Tissue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interneuron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interneuron
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motor-neuron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor neuron
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensory-neuron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensory neuron
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polymodal-neuron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polymodal neuron
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neuron-with-unknown-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Neuron with unknown function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excretory-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Excretory System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Excretory System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#excretory-pore-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Excretory pore cell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duct-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duct cell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gland-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gland cell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excretory-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Excretory cell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excretory-duct" class="md-nav__link">
+    <span class="md-ellipsis">
+      Excretory duct
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epithelial-tissue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epithelial Tissue
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epithelial Tissue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hypodermis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hypodermis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seam-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seam cell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#socket-cell-xxx-cells" class="md-nav__link">
+    <span class="md-ellipsis">
+      Socket cell, XXX cells
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sheath-cell-other-than-amphid-sheath-and-phasmid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sheath cell other than amphid sheath and phasmid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amphid-sheath-and-phasmid-sheath" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amphid sheath and phasmid sheath
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pharyngeal-intestinal-vavle-intestinal-rectal-valve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pharyngeal-intestinal vavle, intestinal rectal valve
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arcade-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arcade cell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pharyngeal-epithelium" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pharyngeal epithelium
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rectal-epithelium-u-f-k-k-y-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rectal epithelium (U, F, K, K', Y, B)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rectal-gland-pharyngeal-glands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rectal gland, pharyngeal glands
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-tissues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Tissues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Tissues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pseudocoelomic-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pseudocoelomic space
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basement-membrane" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basement membrane
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glr-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glr cell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coeloemocyte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coeloemocyte
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head-mesodermal-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Head mesodermal cell
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#male" class="md-nav__link">
+    <span class="md-ellipsis">
+      Male
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Male">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#muscle_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Muscle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Muscle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagonal-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagonal muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anterior-outer-longitudinal-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anterior outer longitudinal muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterior-outer-longitudinal-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Posterior outer longitudinal muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anterior-niner-longitudinal-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anterior niner longitudinal muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterior-niner-longitudinal-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Posterior niner longitudinal muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caudal-inner-longitudinal-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caudal inner longitudinal muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spicule-retractor-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spicule retractor muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spicule-protractor-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spicule protractor muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gubernacular-retractor-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gubernacular retractor muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gubernacular-erector-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gubernacular erector muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anterior-oblique-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anterior oblique muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterior-oblique-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Posterior oblique muscles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reproductive-system_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reproductive System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reproductive System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vas-deferens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vas deferens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seminal-vesicle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seminal vesicle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proctodeum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proctodeum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epithelial-tissue_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epithelial Tissue
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epithelial Tissue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sheath-cell-spicules-hook-or-post-cloacal-sensilla" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sheath cell (spicules, hook or post-cloacal sensilla)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#socket-cell-spicules-hook-or-post-cloacal-sensilla" class="md-nav__link">
+    <span class="md-ellipsis">
+      Socket cell (spicules, hook or post-cloacal sensilla)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ray-structural-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ray structural cell
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Python package
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Python package
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hermaphrodite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hermaphrodite
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hermaphrodite">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Muscle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Muscle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intestinal-muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intestinal muscle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vulval-muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vulval muscle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body-wall-muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Body wall muscle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uterine-muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uterine muscle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sphincter-and-anal-depressor-muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sphincter and anal depressor muscle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#odd-numbered-pharyngeal-muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Odd numbered pharyngeal muscle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#even-numbered-pharyngeal-muscle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Even numbered pharyngeal muscle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alimentary-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alimentary System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alimentary System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#marginal-cells-mc-of-the-pharynx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marginal cells (mc) of the pharynx
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intestinal-cells" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intestinal cells
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reproductive-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reproductive System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reproductive System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vulval-epithelium" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vulval epithelium
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#germline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Germline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dtc-and-somatic-gonad" class="md-nav__link">
+    <span class="md-ellipsis">
+      DTC and somatic gonad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#embryo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embryo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uterus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uterus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spermatheca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spermatheca
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spermatheca-uterine-valve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spermatheca-uterine valve
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nervous-tissue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nervous Tissue
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nervous Tissue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interneuron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interneuron
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motor-neuron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor neuron
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensory-neuron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensory neuron
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polymodal-neuron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polymodal neuron
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neuron-with-unknown-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Neuron with unknown function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excretory-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Excretory System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Excretory System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#excretory-pore-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Excretory pore cell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duct-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duct cell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gland-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gland cell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excretory-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Excretory cell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excretory-duct" class="md-nav__link">
+    <span class="md-ellipsis">
+      Excretory duct
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epithelial-tissue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epithelial Tissue
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epithelial Tissue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hypodermis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hypodermis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seam-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seam cell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#socket-cell-xxx-cells" class="md-nav__link">
+    <span class="md-ellipsis">
+      Socket cell, XXX cells
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sheath-cell-other-than-amphid-sheath-and-phasmid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sheath cell other than amphid sheath and phasmid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amphid-sheath-and-phasmid-sheath" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amphid sheath and phasmid sheath
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pharyngeal-intestinal-vavle-intestinal-rectal-valve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pharyngeal-intestinal vavle, intestinal rectal valve
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arcade-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arcade cell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pharyngeal-epithelium" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pharyngeal epithelium
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rectal-epithelium-u-f-k-k-y-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rectal epithelium (U, F, K, K', Y, B)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rectal-gland-pharyngeal-glands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rectal gland, pharyngeal glands
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-tissues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Tissues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Tissues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pseudocoelomic-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pseudocoelomic space
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basement-membrane" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basement membrane
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glr-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glr cell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coeloemocyte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coeloemocyte
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head-mesodermal-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Head mesodermal cell
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#male" class="md-nav__link">
+    <span class="md-ellipsis">
+      Male
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Male">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#muscle_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Muscle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Muscle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagonal-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagonal muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anterior-outer-longitudinal-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anterior outer longitudinal muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterior-outer-longitudinal-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Posterior outer longitudinal muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anterior-niner-longitudinal-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anterior niner longitudinal muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterior-niner-longitudinal-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Posterior niner longitudinal muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caudal-inner-longitudinal-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caudal inner longitudinal muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spicule-retractor-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spicule retractor muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spicule-protractor-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spicule protractor muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gubernacular-retractor-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gubernacular retractor muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gubernacular-erector-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gubernacular erector muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anterior-oblique-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anterior oblique muscles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posterior-oblique-muscles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Posterior oblique muscles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reproductive-system_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reproductive System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reproductive System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vas-deferens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vas deferens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seminal-vesicle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seminal vesicle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proctodeum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proctodeum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epithelial-tissue_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epithelial Tissue
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epithelial Tissue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sheath-cell-spicules-hook-or-post-cloacal-sensilla" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sheath cell (spicules, hook or post-cloacal sensilla)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#socket-cell-spicules-hook-or-post-cloacal-sensilla" class="md-nav__link">
+    <span class="md-ellipsis">
+      Socket cell (spicules, hook or post-cloacal sensilla)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ray-structural-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ray structural cell
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>C. elegans cells</h1>
+
+<h2 id="hermaphrodite">Hermaphrodite</h2>
+<h3 id="muscle">Muscle</h3>
+<h4 id="intestinal-muscle"><img alt="#006600" src="https://via.placeholder.com/15/006600/006600.png"/> Intestinal muscle</h4>
+<h4 id="vulval-muscle"><img alt="#99c66" src="https://via.placeholder.com/15/99c66/99c66.png"/> Vulval muscle</h4>
+<h4 id="body-wall-muscle"><img alt="#336600" src="https://via.placeholder.com/15/336600/336600.png"/> Body wall muscle</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">0</th>
+<th style="text-align: left;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Notes</td>
+<td style="text-align: left;">Link</td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL01</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL02</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL03</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL04</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL05</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL06</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL07</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL08</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL09</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL10</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL11</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL12</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL13</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL14</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL15</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL16</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL17</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL18</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL19</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL20</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL21</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL22</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL23</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDL24</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR01</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR02</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR03</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR04</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR05</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR06</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR07</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR08</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR09</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR10</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR11</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR12</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR13</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR14</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR15</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR16</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR17</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR18</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR19</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR20</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR21</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR22</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR23</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MDR24</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MDRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL01</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL02</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL03</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL04</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL05</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL06</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL07</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL08</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL09</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL10</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL11</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL12</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL13</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL14</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL15</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL16</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL17</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL18</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL19</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL20</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL21</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL22</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVL23</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR01</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR02</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR03</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR04</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR05</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR06</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR07</td>
+<td style="text-align: left;">head muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR08</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR09</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR10</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR11</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR12</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR13</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR14</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR15</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR16</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR17</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR18</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR19</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR20</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR21</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR22</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR23</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">MVR24</td>
+<td style="text-align: left;">main body muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/MVRframeset.html">WormAtlas</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="uterine-muscle"><img alt="#99cc00" src="https://via.placeholder.com/15/99cc00/99cc00.png"/> Uterine muscle</h4>
+<h4 id="sphincter-and-anal-depressor-muscle"><img alt="#669900" src="https://via.placeholder.com/15/669900/669900.png"/> Sphincter and anal depressor muscle</h4>
+<h4 id="odd-numbered-pharyngeal-muscle"><img alt="#33cC00" src="https://via.placeholder.com/15/33cC00/33cC00.png"/> Odd numbered pharyngeal muscle</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">0</th>
+<th style="text-align: left;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Notes</td>
+<td style="text-align: left;">Link</td>
+</tr>
+<tr>
+<td style="text-align: left;">pm1</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/pmframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">pm3D</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;">pm3D</td>
+</tr>
+<tr>
+<td style="text-align: left;">pm3VL</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/pm3Vframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">pm3VR</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/pm3Vframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">pm5D</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;">pm5D</td>
+</tr>
+<tr>
+<td style="text-align: left;">pm5VL</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/pm5Vframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">pm5VR</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/pm5Vframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">pm7D</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;">pm7D</td>
+</tr>
+<tr>
+<td style="text-align: left;">pm7VL</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/pm7Vframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">pm7VR</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/pm7Vframeset.html">WormAtlas</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="even-numbered-pharyngeal-muscle"><img alt="#ccf199" src="https://via.placeholder.com/15/ccf199/ccf199.png"/> Even numbered pharyngeal muscle</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">0</th>
+<th style="text-align: left;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Notes</td>
+<td style="text-align: left;">Link</td>
+</tr>
+<tr>
+<td style="text-align: left;">pm2D</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;">pm2D</td>
+</tr>
+<tr>
+<td style="text-align: left;">pm2VL</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/pm2Vframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">pm2VR</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/pm2Vframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">pm4D</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;">pm4D</td>
+</tr>
+<tr>
+<td style="text-align: left;">pm4VL</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/pm4Vframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">pm4VR</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/pm4Vframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">pm6D</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;">pm6D</td>
+</tr>
+<tr>
+<td style="text-align: left;">pm6VL</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/pm6Vframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">pm6VR</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/pm6Vframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">pm8</td>
+<td style="text-align: left;">pharyngeal muscle</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/pmframeset.html">WormAtlas</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="alimentary-system">Alimentary System</h3>
+<h4 id="marginal-cells-mc-of-the-pharynx"><img alt="#cc33cc" src="https://via.placeholder.com/15/cc33cc/cc33cc.png"/> Marginal cells (mc) of the pharynx</h4>
+<h4 id="intestinal-cells"><img alt="#ffccff" src="https://via.placeholder.com/15/ffccff/ffccff.png"/> Intestinal cells</h4>
+<h3 id="reproductive-system">Reproductive System</h3>
+<h4 id="vulval-epithelium"><img alt="#9999ff" src="https://via.placeholder.com/15/9999ff/9999ff.png"/> Vulval epithelium</h4>
+<h4 id="germline"><img alt="#003366" src="https://via.placeholder.com/15/003366/003366.png"/> Germline</h4>
+<h4 id="dtc-and-somatic-gonad"><img alt="#9966ff" src="https://via.placeholder.com/15/9966ff/9966ff.png"/> DTC and somatic gonad</h4>
+<h4 id="embryo"><img alt="#6699cc" src="https://via.placeholder.com/15/6699cc/6699cc.png"/> Embryo</h4>
+<h4 id="uterus"><img alt="#99cccc" src="https://via.placeholder.com/15/99cccc/99cccc.png"/> Uterus</h4>
+<h4 id="spermatheca"><img alt="#3399ff" src="https://via.placeholder.com/15/3399ff/3399ff.png"/> Spermatheca</h4>
+<h4 id="spermatheca-uterine-valve"><img alt="#666699" src="https://via.placeholder.com/15/666699/666699.png"/> Spermatheca-uterine valve</h4>
+<h3 id="nervous-tissue">Nervous Tissue</h3>
+<h4 id="interneuron"><img alt="#ff3300" src="https://via.placeholder.com/15/ff3300/ff3300.png"/> Interneuron</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">0</th>
+<th style="text-align: left;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Notes</td>
+<td style="text-align: left;">Link</td>
+</tr>
+<tr>
+<td style="text-align: left;">ADAL</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ADAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ADAR</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ADAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AIAL</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AIAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AIAR</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AIAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AIBL</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AIBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AIBR</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AIBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AIML</td>
+<td style="text-align: left;">category 4 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AIMframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AIMR</td>
+<td style="text-align: left;">category 4 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AIMframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AINL</td>
+<td style="text-align: left;">category 4 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AINframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AINR</td>
+<td style="text-align: left;">category 4 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AINframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AIYL</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AIYframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AIYR</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AIYframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AIZL</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AIZframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AIZR</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AIZframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ALA</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ALAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AUAL</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AUAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AUAR</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AUAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVAL</td>
+<td style="text-align: left;">layer 1 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVAR</td>
+<td style="text-align: left;">layer 1 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVBL</td>
+<td style="text-align: left;">layer 1 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVBR</td>
+<td style="text-align: left;">layer 1 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVDL</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVDR</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVEL</td>
+<td style="text-align: left;">layer 1 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVEframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVER</td>
+<td style="text-align: left;">layer 1 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVEframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVFL</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVFframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVFR</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVFframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVG</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVGframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVHL</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVHframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVHR</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVHframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVJL</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVJframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVJR</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVJframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVKL</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVKframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVKR</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVKframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVL</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">BDUL</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/BDUframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">BDUR</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/BDUframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DVB</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DVBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DVC</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DVCframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">I1L</td>
+<td style="text-align: left;">pharyngeal interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/I1frameset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">I1R</td>
+<td style="text-align: left;">pharyngeal interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/I1frameset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">I2L</td>
+<td style="text-align: left;">pharyngeal interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/I2frameset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">I2R</td>
+<td style="text-align: left;">pharyngeal interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/I2frameset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">I3</td>
+<td style="text-align: left;">pharyngeal interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/Iframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">I4</td>
+<td style="text-align: left;">pharyngeal interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/Iframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">I5</td>
+<td style="text-align: left;">pharyngeal interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/Iframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">I6</td>
+<td style="text-align: left;">pharyngeal interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/Iframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">LUAL</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/LUAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">LUAR</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/LUAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PVCL</td>
+<td style="text-align: left;">layer 1 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PVCframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PVCR</td>
+<td style="text-align: left;">layer 1 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PVCframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PVNL</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PVNframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PVNR</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PVNframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PVPL</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PVPframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PVPR</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PVPframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PVQL</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PVQframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PVQR</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PVQframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PVR</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PVT</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PVTframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PVWL</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PVWframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PVWR</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PVWframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIAL</td>
+<td style="text-align: left;">layer 1 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIAR</td>
+<td style="text-align: left;">layer 1 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIBL</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIBR</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RICL</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RICframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RICR</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RICframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RID</td>
+<td style="text-align: left;">layer 1 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIFL</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIFframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIFR</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIFframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIGL</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIGframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIGR</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIGframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIH</td>
+<td style="text-align: left;">category 4 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIHframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIML</td>
+<td style="text-align: left;">layer 1 interneuron; motorneuron in White et al., 1986</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIMframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIMR</td>
+<td style="text-align: left;">layer 1 interneuron; motorneuron in White et al., 1986</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIMframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIPL</td>
+<td style="text-align: left;">linker to pharynx</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIPframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIPR</td>
+<td style="text-align: left;">linker to pharynx</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIPframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIR</td>
+<td style="text-align: left;">category 4 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIS</td>
+<td style="text-align: left;">layer 3 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RISframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMFL</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMFframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMFR</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMFframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMGL</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMGframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMGR</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMGframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SAADL</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SAADframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SAADR</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SAADframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SAAVL</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SAAVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SAAVR</td>
+<td style="text-align: left;">layer 2 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SAAVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">URBL</td>
+<td style="text-align: left;">category 4 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/URBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">URBR</td>
+<td style="text-align: left;">category 4 interneuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/URBframeset.html">WormAtlas</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="motor-neuron"><img alt="#9966cc" src="https://via.placeholder.com/15/9966cc/9966cc.png"/> Motor neuron</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">0</th>
+<th style="text-align: left;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Notes</td>
+<td style="text-align: left;">Link</td>
+</tr>
+<tr>
+<td style="text-align: left;">AS1</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AS10</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AS11</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AS2</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AS3</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AS4</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AS5</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AS6</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AS7</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AS8</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AS9</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DA1</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DA2</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DA3</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DA4</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DA5</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DA6</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DA7</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DA8</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DA9</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DB1</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DB2</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DB3</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DB4</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DB5</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DB6</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DB7</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DD1</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DD2</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DD3</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DD4</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DD5</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DD6</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">HSNL</td>
+<td style="text-align: left;">hermaphrodite specific motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/HSNframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">HSNR</td>
+<td style="text-align: left;">hermaphrodite specific motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/HSNframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">M1</td>
+<td style="text-align: left;">pharyngeal motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/Mframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">M2L</td>
+<td style="text-align: left;">pharyngeal motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/M2frameset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">M2R</td>
+<td style="text-align: left;">pharyngeal motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/M2frameset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">M3L</td>
+<td style="text-align: left;">pharyngeal motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/M3frameset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">M3R</td>
+<td style="text-align: left;">pharyngeal motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/M3frameset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">M4</td>
+<td style="text-align: left;">pharyngeal motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/Mframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">M5</td>
+<td style="text-align: left;">pharyngeal motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/Mframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PDA</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PDAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PDB</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PDBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIVL</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RIVR</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RIVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMDDL</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMDDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMDDR</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMDDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMDL</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMDR</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMDVL</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMDVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMDVR</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMDVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMED</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMEframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMEL</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMEframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMER</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMEframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMEV</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMEframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMHL</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMHframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RMHR</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/RMHframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SABD</td>
+<td style="text-align: left;">sublateral motor neuron; interneuron in White et al., 1986</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SABDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SABVL</td>
+<td style="text-align: left;">sublateral motor neuron; interneuron in White et al., 1986</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SABVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SABVR</td>
+<td style="text-align: left;">sublateral motor neuron; interneuron in White et al., 1986</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SABVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SIADL</td>
+<td style="text-align: left;">sublateral motor neuron; interneuron in White et al., 1986</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SIADframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SIADR</td>
+<td style="text-align: left;">sublateral motor neuron; interneuron in White et al., 1986</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SIADframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SIAVL</td>
+<td style="text-align: left;">sublateral motor neuron; interneuron in White et al., 1986</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SIAVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SIAVR</td>
+<td style="text-align: left;">sublateral motor neuron; interneuron in White et al., 1986</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SIAVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SIBDL</td>
+<td style="text-align: left;">sublateral motor neuron; interneuron in White et al., 1986</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SIBDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SIBDR</td>
+<td style="text-align: left;">sublateral motor neuron; interneuron in White et al., 1986</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SIBDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SIBVL</td>
+<td style="text-align: left;">sublateral motor neuron; interneuron in White et al., 1986</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SIBVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SIBVR</td>
+<td style="text-align: left;">sublateral motor neuron; interneuron in White et al., 1986</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SIBVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SMBDL</td>
+<td style="text-align: left;">sublateral motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SMBDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SMBDR</td>
+<td style="text-align: left;">sublateral motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SMBDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SMBVL</td>
+<td style="text-align: left;">sublateral motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SMBVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SMBVR</td>
+<td style="text-align: left;">sublateral motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SMBVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SMDDL</td>
+<td style="text-align: left;">sublateral motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SMDDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SMDDR</td>
+<td style="text-align: left;">sublateral motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SMDDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SMDVL</td>
+<td style="text-align: left;">sublateral motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SMDVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SMDVR</td>
+<td style="text-align: left;">sublateral motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SMDVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">URADL</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/URADframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">URADR</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/URADframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">URAVL</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/URAVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">URAVR</td>
+<td style="text-align: left;">head motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/URAVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VA1</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VA10</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VA11</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VA12</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VA2</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VA3</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VA4</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VA5</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VA6</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VA7</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VA8</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VA9</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VB1</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VB10</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VB11</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VB2</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VB3</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VB4</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VB5</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VB6</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VB7</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VB8</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VB9</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VC1</td>
+<td style="text-align: left;">hermaphrodite specific motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VCframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VC2</td>
+<td style="text-align: left;">hermaphrodite specific motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VCframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VC3</td>
+<td style="text-align: left;">hermaphrodite specific motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VCframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VC4</td>
+<td style="text-align: left;">hermaphrodite specific motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VCframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VC5</td>
+<td style="text-align: left;">hermaphrodite specific motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VCframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VC6</td>
+<td style="text-align: left;">hermaphrodite specific motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VCframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VD1</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VD10</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VD11</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VD12</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VD13</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VD2</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VD3</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VD4</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VD5</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VD6</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VD7</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VD8</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VD9</td>
+<td style="text-align: left;">ventral cord motor neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/VDframeset.html">WormAtlas</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="sensory-neuron"><img alt="#ff66cc" src="https://via.placeholder.com/15/ff66cc/ff66cc.png"/> Sensory neuron</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">0</th>
+<th style="text-align: left;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Notes</td>
+<td style="text-align: left;">Link</td>
+</tr>
+<tr>
+<td style="text-align: left;">ADEL</td>
+<td style="text-align: left;">mechanosensory</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ADEframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ADER</td>
+<td style="text-align: left;">mechanosensory</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ADEframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ADFL</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ADFframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ADFR</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ADFframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ADLL</td>
+<td style="text-align: left;">amphid, nociceptive</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ADLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ADLR</td>
+<td style="text-align: left;">amphid, nociceptive</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ADLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AFDL</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AFDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AFDR</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AFDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ALML</td>
+<td style="text-align: left;">mechanosensory</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ALMframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ALMR</td>
+<td style="text-align: left;">mechanosensory</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ALMframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ALNL</td>
+<td style="text-align: left;">touch</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ALNframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ALNR</td>
+<td style="text-align: left;">touch</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ALNframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AQR</td>
+<td style="text-align: left;">touch</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AQframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ASEL</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASEframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ASER</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASEframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ASGL</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASGframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ASGR</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASGframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ASHL</td>
+<td style="text-align: left;">amphid, nociceptive</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASHframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ASHR</td>
+<td style="text-align: left;">amphid, nociceptive</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASHframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ASIL</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASIframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ASIR</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASIframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ASJL</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASJframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ASJR</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASJframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ASKL</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASKframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ASKR</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/ASKframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AVM</td>
+<td style="text-align: left;">mechanosensory</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AVMframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AWAL</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AWAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AWAR</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AWAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AWBL</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AWBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AWBR</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AWBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AWCL</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AWCframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AWCR</td>
+<td style="text-align: left;">amphid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/AWCframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">BAGL</td>
+<td style="text-align: left;">O2, CO2, social signals, touch</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/BAGframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">BAGR</td>
+<td style="text-align: left;">O2, CO2, social signals, touch</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/BAGframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">CEPDL</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/CEPDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">CEPDR</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/CEPDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">CEPVL</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/CEPVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">CEPVR</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/CEPVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">DVA</td>
+<td style="text-align: left;">mechanosensory</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/DVAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">FLPL</td>
+<td style="text-align: left;">mechanosensory</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/FLPframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">FLPR</td>
+<td style="text-align: left;">mechanosensory</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/FLPframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">IL1DL</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/IL1Dframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">IL1DR</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/IL1Dframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">IL1L</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/IL1frameset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">IL1R</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/IL1frameset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">IL1VL</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/IL1Vframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">IL1VR</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/IL1Vframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">IL2DL</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/IL2Dframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">IL2DR</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/IL2Dframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">IL2L</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/IL2frameset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">IL2R</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/IL2frameset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">IL2VL</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/IL2Vframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">IL2VR</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/IL2Vframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">OLLL</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/OLLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">OLLR</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/OLLframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">OLQDL</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/OLQDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">OLQDR</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/OLQDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">OLQVL</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/OLQVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">OLQVR</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/OLQVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PDEL</td>
+<td style="text-align: left;">mechanosensory</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PDEframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PDER</td>
+<td style="text-align: left;">mechanosensory</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PDEframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PHAL</td>
+<td style="text-align: left;">phasmid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PHAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PHAR</td>
+<td style="text-align: left;">phasmid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PHAframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PHBL</td>
+<td style="text-align: left;">phasmid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PHBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PHBR</td>
+<td style="text-align: left;">phasmid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PHBframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PHCL</td>
+<td style="text-align: left;">phasmid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PHCframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PHCR</td>
+<td style="text-align: left;">phasmid</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PHCframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PLML</td>
+<td style="text-align: left;">mechanosensory</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PLMframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PLMR</td>
+<td style="text-align: left;">mechanosensory</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PLMframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PLNL</td>
+<td style="text-align: left;">touch</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PLNframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PLNR</td>
+<td style="text-align: left;">touch</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PLNframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PQR</td>
+<td style="text-align: left;">touch</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PQframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PVDL</td>
+<td style="text-align: left;">mechanosensory</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PVDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PVDR</td>
+<td style="text-align: left;">mechanosensory</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PVDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">PVM</td>
+<td style="text-align: left;">mechanosensory</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/PVMframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SDQL</td>
+<td style="text-align: left;">touch</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SDQframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SDQR</td>
+<td style="text-align: left;">touch</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/SDQframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">URXL</td>
+<td style="text-align: left;">O2, CO2, social signals, touch</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/URXframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">URXR</td>
+<td style="text-align: left;">O2, CO2, social signals, touch</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/URXframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">URYDL</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/URYDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">URYDR</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/URYDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">URYVL</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/URYVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">URYVR</td>
+<td style="text-align: left;">cephalic</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/URYVframeset.html">WormAtlas</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="polymodal-neuron"><img alt="#cc0033" src="https://via.placeholder.com/15/cc0033/cc0033.png"/> Polymodal neuron</h4>
+<h4 id="neuron-with-unknown-function"><img alt="#990033" src="https://via.placeholder.com/15/990033/990033.png"/> Neuron with unknown function</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">0</th>
+<th style="text-align: left;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Notes</td>
+<td style="text-align: left;">Link</td>
+</tr>
+<tr>
+<td style="text-align: left;">CANL</td>
+<td style="text-align: left;">canal neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/CANframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">CANR</td>
+<td style="text-align: left;">canal neuron</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/CANframeset.html">WormAtlas</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="excretory-system">Excretory System</h3>
+<h4 id="excretory-pore-cell"><img alt="#ecf781" src="https://via.placeholder.com/15/ecf781/ecf781.png"/> Excretory pore cell</h4>
+<h4 id="duct-cell"><img alt="#сс9966" src="https://via.placeholder.com/15/сс9966/сс9966.png"/> Duct cell</h4>
+<h4 id="gland-cell"><img alt="#9999cc" src="https://via.placeholder.com/15/9999cc/9999cc.png"/> Gland cell</h4>
+<h4 id="excretory-cell"><img alt="#cc3366" src="https://via.placeholder.com/15/cc3366/cc3366.png"/> Excretory cell</h4>
+<h4 id="excretory-duct"><img alt="#cccc99" src="https://via.placeholder.com/15/cccc99/cccc99.png"/> Excretory duct</h4>
+<h3 id="epithelial-tissue">Epithelial Tissue</h3>
+<h4 id="hypodermis"><img alt="#dcc3ac" src="https://via.placeholder.com/15/dcc3ac/dcc3ac.png"/> Hypodermis</h4>
+<h4 id="seam-cell"><img alt="#сс6633" src="https://via.placeholder.com/15/сс6633/сс6633.png"/> Seam cell</h4>
+<h4 id="socket-cell-xxx-cells"><img alt="#ff9999" src="https://via.placeholder.com/15/ff9999/ff9999.png"/> Socket cell, XXX cells</h4>
+<h4 id="sheath-cell-other-than-amphid-sheath-and-phasmid"><img alt="#339999" src="https://via.placeholder.com/15/339999/339999.png"/> Sheath cell other than amphid sheath and phasmid</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">0</th>
+<th style="text-align: left;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Notes</td>
+<td style="text-align: left;">Link</td>
+</tr>
+<tr>
+<td style="text-align: left;">CEPshDL</td>
+<td style="text-align: left;">glial</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/CEPshDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">CEPshDR</td>
+<td style="text-align: left;">glial</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/CEPshDframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">CEPshVL</td>
+<td style="text-align: left;">glial</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/CEPshVframeset.html">WormAtlas</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">CEPshVR</td>
+<td style="text-align: left;">glial</td>
+<td style="text-align: left;"><a href="https://www.wormatlas.org/neurons/Individual Neurons/CEPshVframeset.html">WormAtlas</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="amphid-sheath-and-phasmid-sheath"><img alt="#01fecc" src="https://via.placeholder.com/15/01fecc/01fecc.png"/> Amphid sheath and phasmid sheath</h4>
+<h4 id="pharyngeal-intestinal-vavle-intestinal-rectal-valve"><img alt="#996633" src="https://via.placeholder.com/15/996633/996633.png"/> Pharyngeal-intestinal vavle, intestinal rectal valve</h4>
+<h4 id="arcade-cell"><img alt="#cccc00" src="https://via.placeholder.com/15/cccc00/cccc00.png"/> Arcade cell</h4>
+<h4 id="pharyngeal-epithelium"><img alt="#996699" src="https://via.placeholder.com/15/996699/996699.png"/> Pharyngeal epithelium</h4>
+<h4 id="rectal-epithelium-u-f-k-k-y-b"><img alt="#996666" src="https://via.placeholder.com/15/996666/996666.png"/> Rectal epithelium (U, F, K, K', Y, B)</h4>
+<h4 id="rectal-gland-pharyngeal-glands"><img alt="#ccccff" src="https://via.placeholder.com/15/ccccff/ccccff.png"/> Rectal gland, pharyngeal glands</h4>
+<h3 id="other-tissues">Other Tissues</h3>
+<h4 id="pseudocoelomic-space"><img alt="#ffffcc" src="https://via.placeholder.com/15/ffffcc/ffffcc.png"/> Pseudocoelomic space</h4>
+<h4 id="basement-membrane"><img alt="#ff9900" src="https://via.placeholder.com/15/ff9900/ff9900.png"/> Basement membrane</h4>
+<h4 id="glr-cell"><img alt="#cc9900" src="https://via.placeholder.com/15/cc9900/cc9900.png"/> Glr cell</h4>
+<h4 id="coeloemocyte"><img alt="#ffcc00" src="https://via.placeholder.com/15/ffcc00/ffcc00.png"/> Coeloemocyte</h4>
+<h4 id="head-mesodermal-cell"><img alt="#ff6633" src="https://via.placeholder.com/15/ff6633/ff6633.png"/> Head mesodermal cell</h4>
+<h2 id="male">Male</h2>
+<h3 id="muscle_1">Muscle</h3>
+<h4 id="diagonal-muscles"><img alt="#66cc66" src="https://via.placeholder.com/15/66cc66/66cc66.png"/> Diagonal muscles</h4>
+<h4 id="anterior-outer-longitudinal-muscles"><img alt="#666633" src="https://via.placeholder.com/15/666633/666633.png"/> Anterior outer longitudinal muscles</h4>
+<h4 id="posterior-outer-longitudinal-muscles"><img alt="#999933" src="https://via.placeholder.com/15/999933/999933.png"/> Posterior outer longitudinal muscles</h4>
+<h4 id="anterior-niner-longitudinal-muscles"><img alt="#99cc33" src="https://via.placeholder.com/15/99cc33/99cc33.png"/> Anterior niner longitudinal muscles</h4>
+<h4 id="posterior-niner-longitudinal-muscles"><img alt="#ccff33" src="https://via.placeholder.com/15/ccff33/ccff33.png"/> Posterior niner longitudinal muscles</h4>
+<h4 id="caudal-inner-longitudinal-muscles"><img alt="#99cc99" src="https://via.placeholder.com/15/99cc99/99cc99.png"/> Caudal inner longitudinal muscles</h4>
+<h4 id="spicule-retractor-muscles"><img alt="#669966" src="https://via.placeholder.com/15/669966/669966.png"/> Spicule retractor muscles</h4>
+<h4 id="spicule-protractor-muscles"><img alt="#99ff99" src="https://via.placeholder.com/15/99ff99/99ff99.png"/> Spicule protractor muscles</h4>
+<h4 id="gubernacular-retractor-muscles"><img alt="#99ffcc" src="https://via.placeholder.com/15/99ffcc/99ffcc.png"/> Gubernacular retractor muscles</h4>
+<h4 id="gubernacular-erector-muscles"><img alt="#66ff33" src="https://via.placeholder.com/15/66ff33/66ff33.png"/> Gubernacular erector muscles</h4>
+<h4 id="anterior-oblique-muscles"><img alt="#33cc99" src="https://via.placeholder.com/15/33cc99/33cc99.png"/> Anterior oblique muscles</h4>
+<h4 id="posterior-oblique-muscles"><img alt="#66cc99" src="https://via.placeholder.com/15/66cc99/66cc99.png"/> Posterior oblique muscles</h4>
+<h3 id="reproductive-system_1">Reproductive System</h3>
+<h4 id="vas-deferens"><img alt="#66cccc" src="https://via.placeholder.com/15/66cccc/66cccc.png"/> Vas deferens</h4>
+<h4 id="seminal-vesicle"><img alt="#6699ff" src="https://via.placeholder.com/15/6699ff/6699ff.png"/> Seminal vesicle</h4>
+<h4 id="proctodeum"><img alt="#996666" src="https://via.placeholder.com/15/996666/996666.png"/> Proctodeum</h4>
+<h3 id="epithelial-tissue_1">Epithelial Tissue</h3>
+<h4 id="sheath-cell-spicules-hook-or-post-cloacal-sensilla"><img alt="#339999" src="https://via.placeholder.com/15/339999/339999.png"/> Sheath cell (spicules, hook or post-cloacal sensilla)</h4>
+<h4 id="socket-cell-spicules-hook-or-post-cloacal-sensilla"><img alt="#ff9999" src="https://via.placeholder.com/15/ff9999/ff9999.png"/> Socket cell (spicules, hook or post-cloacal sensilla)</h4>
+<h4 id="ray-structural-cell"><img alt="#006666" src="https://via.placeholder.com/15/006666/006666.png"/> Ray structural cell</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
