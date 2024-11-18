@@ -18,9 +18,3 @@ _Published: 24 February 2021_
 - Presents a "contactome": the set of membrane contacts of the brain
 - They define two neurons as immediate neighbours if the membranes along their neural processes are physically adjacent in at least one EM.
 - To characterise synaptic pathways within a spatial context, they integrated volumetric reconstructions with recent re-scoring of synapses on the same L4 and adult worms (Cook et al. 2019) for validation and comparison with other datasets (White et al, (1986); Witvliet et al., (2021))
-
-Data released
-
-  - https://zenodo.org/records/4383277
-  - https://zenodo.org/records/4383277
-
